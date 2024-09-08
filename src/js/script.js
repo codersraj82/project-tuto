@@ -35,4 +35,15 @@ const boxMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
 const box = new THREE.Mesh(boxGeometry, boxMaterial);
 //add to scene
 scene.add(box);
-renderer.render(scene, camera);
+
+// geometric trnsformation
+
+//animation is a sequence of transfomation
+
+function animate() {
+  box.rotation.x += 0.01;
+  box.rotation.y += 0.01;
+  renderer.render(scene, camera);
+}
+
+renderer.setAnimationLoop(animate);

@@ -610,7 +610,14 @@ const boxMaterial = new _three.MeshBasicMaterial({
 const box = new _three.Mesh(boxGeometry, boxMaterial);
 //add to scene
 scene.add(box);
-renderer.render(scene, camera);
+// geometric trnsformation
+//animation is a sequence of transfomation
+function animate() {
+    box.rotation.x += 0.01;
+    box.rotation.y += 0.01;
+    renderer.render(scene, camera);
+}
+renderer.setAnimationLoop(animate);
 
 },{"three":"ktPTu","three/examples/jsm/controls/OrbitControls.js":"7mqRv"}],"ktPTu":[function(require,module,exports) {
 /**
