@@ -651,9 +651,14 @@ gui.add(options, "wireframe").onChange((e)=>{
 });
 // geometric trnsformation
 //animation is a sequence of transfomation
+// add bounce effect to sphere
+let step = 0;
+let speed = 0.01;
 function animate(time) {
     box.rotation.x = time / 1000;
     box.rotation.y = time / 1000;
+    step += speed;
+    sphere.position.y = 10 * Math.abs(Math.sin(step));
     renderer.render(scene, camera);
 }
 renderer.setAnimationLoop(animate);
