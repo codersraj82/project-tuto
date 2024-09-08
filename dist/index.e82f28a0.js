@@ -595,8 +595,12 @@ document.body.appendChild(renderer.domElement);
 //create scene and camera object
 const scene = new _three.Scene();
 const camera = new _three.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-const axesHelper = new _three.AxesHelper(30);
+const axesHelper = new _three.AxesHelper(5);
 scene.add(axesHelper);
+//change the position backward
+// camera.position.z = 5;
+// camera.position.y = 2;
+camera.position.set(0, 2, 5);
 renderer.render(scene, camera);
 
 },{"three":"ktPTu","three/examples/jsm/controls/OrbitControls.js":"7mqRv"}],"ktPTu":[function(require,module,exports) {

@@ -21,6 +21,12 @@ const camera = new THREE.PerspectiveCamera(
   0.1,
   1000
 );
-const axesHelper = new THREE.AxesHelper(30);
+const axesHelper = new THREE.AxesHelper(5);
 scene.add(axesHelper);
+//change the position backward
+
+// camera.position.z = 5;
+// camera.position.y = 2;
+camera.position.set(0, 2, 5);
+
 renderer.render(scene, camera);
