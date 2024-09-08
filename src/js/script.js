@@ -87,8 +87,11 @@ gui.add(options, "wireframe").onChange((e) => {
 });
 
 gui.add(options, "speed", 0, 0.1);
-// geometric trnsformation
 
+//Ambient Light source
+const ambientLight = new THREE.AmbientLight(0x333333);
+scene.add(ambientLight);
+// geometric trnsformation
 //animation is a sequence of transfomation
 // add bounce effect to sphere
 let step = 0;
