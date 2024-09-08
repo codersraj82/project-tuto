@@ -601,6 +601,15 @@ scene.add(axesHelper);
 // camera.position.z = 5;
 // camera.position.y = 2;
 camera.position.set(0, 2, 5);
+// add other object in scene
+// add box
+const boxGeometry = new _three.BoxGeometry();
+const boxMaterial = new _three.MeshBasicMaterial({
+    color: 0x00ff00
+});
+const box = new _three.Mesh(boxGeometry, boxMaterial);
+//add to scene
+scene.add(box);
 renderer.render(scene, camera);
 
 },{"three":"ktPTu","three/examples/jsm/controls/OrbitControls.js":"7mqRv"}],"ktPTu":[function(require,module,exports) {

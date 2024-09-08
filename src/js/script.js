@@ -28,5 +28,11 @@ scene.add(axesHelper);
 // camera.position.z = 5;
 // camera.position.y = 2;
 camera.position.set(0, 2, 5);
-
+// add other object in scene
+// add box
+const boxGeometry = new THREE.BoxGeometry();
+const boxMaterial = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+const box = new THREE.Mesh(boxGeometry, boxMaterial);
+//add to scene
+scene.add(box);
 renderer.render(scene, camera);
