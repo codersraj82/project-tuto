@@ -1,6 +1,6 @@
 import * as THREE from "three";
 import { OrbitControls } from "three/examples/jsm/controls/OrbitControls.js";
-
+import * as dat from "dat.gui";
 //Create wenGL renderer
 
 const renderer = new THREE.WebGLRenderer();
@@ -69,6 +69,21 @@ const sphereMaterial = new THREE.MeshBasicMaterial({
 const sphere = new THREE.Mesh(sphereGeometry, sphereMaterial);
 scene.add(sphere);
 sphere.position.set(-10, 10, 0);
+// add gui for user selction of parameters
+const gui = new dat.GUI();
+
+const options = {
+  sphereColor: "#ffea00",
+  wireframe: false,
+};
+
+gui.addColor(options, "sphereColor").onChange((e) => {
+  sphere.material.color.set(e);
+});
+
+gui.add(options, "wireframe").onChange((e) => {
+  sphere.material.wireframe = e;
+});
 // geometric trnsformation
 
 //animation is a sequence of transfomation
