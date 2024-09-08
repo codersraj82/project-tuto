@@ -596,14 +596,14 @@ document.body.appendChild(renderer.domElement);
 const scene = new _three.Scene();
 const camera = new _three.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 // add helper for axes
-const axesHelper = new _three.AxesHelper(5);
+const axesHelper = new _three.AxesHelper(20);
 scene.add(axesHelper);
 // add mobility to camera
 const orbit = new (0, _orbitControlsJs.OrbitControls)(camera, renderer.domElement);
 //change the position backward
 // camera.position.z = 5;
 // camera.position.y = 2;
-camera.position.set(5, 10, 10);
+camera.position.set(5, 10, 25);
 // update mobility of camera
 orbit.update();
 // add other object in scene
@@ -616,7 +616,7 @@ const box = new _three.Mesh(boxGeometry, boxMaterial);
 //add to scene
 scene.add(box);
 // add plane elemnt / object in scene
-const planeGeometry = new _three.PlaneGeometry(10, 10);
+const planeGeometry = new _three.PlaneGeometry(30, 30);
 const planeMaterial = new _three.MeshBasicMaterial({
     color: 0xffffff,
     side: _three.DoubleSide
@@ -625,8 +625,17 @@ const plane = new _three.Mesh(planeGeometry, planeMaterial);
 scene.add(plane);
 plane.rotation.x = -0.5 * Math.PI;
 // add grid helper
-const gridHelper = new _three.GridHelper(10);
+const gridHelper = new _three.GridHelper(30);
 scene.add(gridHelper);
+// add sphere
+const sphereGeometry = new _three.SphereGeometry(4);
+const sphereMaterial = new _three.MeshBasicMaterial({
+    color: 0x0000ff,
+    wireframe: true
+});
+const sphere = new _three.Mesh(sphereGeometry, sphereMaterial);
+scene.add(sphere);
+sphere.position.set(-10, 10, 0);
 // geometric trnsformation
 //animation is a sequence of transfomation
 function animate(time) {
