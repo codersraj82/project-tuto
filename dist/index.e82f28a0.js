@@ -595,12 +595,17 @@ document.body.appendChild(renderer.domElement);
 //create scene and camera object
 const scene = new _three.Scene();
 const camera = new _three.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+// add helper for axes
 const axesHelper = new _three.AxesHelper(5);
 scene.add(axesHelper);
+// add mobility to camera
+const orbit = new (0, _orbitControlsJs.OrbitControls)(camera, renderer.domElement);
 //change the position backward
 // camera.position.z = 5;
 // camera.position.y = 2;
 camera.position.set(0, 2, 5);
+// update mobility of camera
+orbit.update();
 // add other object in scene
 // add box
 const boxGeometry = new _three.BoxGeometry();
@@ -612,9 +617,9 @@ const box = new _three.Mesh(boxGeometry, boxMaterial);
 scene.add(box);
 // geometric trnsformation
 //animation is a sequence of transfomation
-function animate() {
-    box.rotation.x += 0.01;
-    box.rotation.y += 0.01;
+function animate(time) {
+    box.rotation.x = time / 1000;
+    box.rotation.y = time / 1000;
     renderer.render(scene, camera);
 }
 renderer.setAnimationLoop(animate);

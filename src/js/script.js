@@ -21,13 +21,20 @@ const camera = new THREE.PerspectiveCamera(
   0.1,
   1000
 );
+// add helper for axes
 const axesHelper = new THREE.AxesHelper(5);
 scene.add(axesHelper);
+// add mobility to camera
+const orbit = new OrbitControls(camera, renderer.domElement);
+
 //change the position backward
 
 // camera.position.z = 5;
 // camera.position.y = 2;
 camera.position.set(0, 2, 5);
+// update mobility of camera
+orbit.update();
+
 // add other object in scene
 // add box
 const boxGeometry = new THREE.BoxGeometry();
@@ -40,9 +47,9 @@ scene.add(box);
 
 //animation is a sequence of transfomation
 
-function animate() {
-  box.rotation.x += 0.01;
-  box.rotation.y += 0.01;
+function animate(time) {
+  box.rotation.x = time / 1000;
+  box.rotation.y = time / 1000;
   renderer.render(scene, camera);
 }
 
