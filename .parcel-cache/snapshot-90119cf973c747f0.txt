@@ -2,12 +2,12 @@
 129C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\src\renderers\shaders\ShaderChunk\color_fragment.glsl.js133702326196772270 0
 106C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\src\nodes\display\SSAAPassNode.js133702326214757786 0
 107C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\examples\jsm\loaders\USDZLoader.js133702326217600084 0
-76C:\web_stack_development\threeJS\yasmina\project-tuto\dist\index.e82f28a0.js133702355290334352 0
+76C:\web_stack_development\threeJS\yasmina\project-tuto\dist\index.e82f28a0.js133702372035083647 0
 135C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\src\renderers\shaders\ShaderChunk\normal_fragment_maps.glsl.js133702326209147359 0
 84C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\src\helpers133702326214490879 1
 115C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\examples\jsm\lines\LineSegmentsGeometry.js133702326205906981 0
 125C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\src\math\interpolants\QuaternionLinearInterpolant.js133702326211216555 0
-80C:\web_stack_development\threeJS\yasmina\project-tuto\dist\index.e82f28a0.js.map133702355290434449 0
+80C:\web_stack_development\threeJS\yasmina\project-tuto\dist\index.e82f28a0.js.map133702372035233547 0
 131C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\src\renderers\shaders\ShaderChunk\default_fragment.glsl.js133702326199378273 0
 135C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\src\renderers\shaders\ShaderChunk\lights_toon_fragment.glsl.js133702326205190059 0
 112C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\examples\jsm\postprocessing\SMAAPass.js133702326214122991 0
@@ -29,7 +29,7 @@
 84C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\src\objects133702326214579282 1
 109C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\src\nodes\lighting\PointLightNode.js133702326210563699 0
 110C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\src\extras\curves\CubicBezierCurve.js133702326198957536 0
-58C:\web_stack_development\threeJS\yasmina\project-tuto\dist133702355290464270 1
+58C:\web_stack_development\threeJS\yasmina\project-tuto\dist133702372035253521 1
 78C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\build133702326216379491 1
 66C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules133702326222799058 1
 123C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\src\renderers\shaders\ShaderLib\linedashed.glsl.js133702326205476362 0
@@ -47,7 +47,7 @@
 83C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\src\scenes133702326212906936 1
 102C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\src\nodes\core\NodeVarying.js133702326209107387 0
 140C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\src\renderers\shaders\ShaderChunk\iridescence_pars_fragment.glsl.js133702326204115237 0
-70C:\web_stack_development\threeJS\yasmina\project-tuto\src\js\script.js133702355277933387 0
+70C:\web_stack_development\threeJS\yasmina\project-tuto\src\js\script.js133702372021111648 0
 81C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\examples133702326192632055 1
 100C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\examples\jsm\lines\Line2.js133702326205320004 0
 107C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\examples\jsm\lines\webgpu\Line2.js133702326205340004 0
@@ -1151,4 +1151,4 @@
 88C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\build\three.cjs133702326192622093 0
 94C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\build\three.webgpu.js133702326216334647 0
 98C:\web_stack_development\threeJS\yasmina\project-tuto\node_modules\three\build\three.webgpu.min.js133702326216429502 0
-69C:\web_stack_development\threeJS\yasmina\project-tuto\dist\index.html133702355290304358 0
+69C:\web_stack_development\threeJS\yasmina\project-tuto\dist\index.html133702372035103609 0

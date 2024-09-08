@@ -603,7 +603,7 @@ const orbit = new (0, _orbitControlsJs.OrbitControls)(camera, renderer.domElemen
 //change the position backward
 // camera.position.z = 5;
 // camera.position.y = 2;
-camera.position.set(0, 2, 5);
+camera.position.set(5, 10, 10);
 // update mobility of camera
 orbit.update();
 // add other object in scene
@@ -615,6 +615,18 @@ const boxMaterial = new _three.MeshBasicMaterial({
 const box = new _three.Mesh(boxGeometry, boxMaterial);
 //add to scene
 scene.add(box);
+// add plane elemnt / object in scene
+const planeGeometry = new _three.PlaneGeometry(10, 10);
+const planeMaterial = new _three.MeshBasicMaterial({
+    color: 0xffffff,
+    side: _three.DoubleSide
+});
+const plane = new _three.Mesh(planeGeometry, planeMaterial);
+scene.add(plane);
+plane.rotation.x = -0.5 * Math.PI;
+// add grid helper
+const gridHelper = new _three.GridHelper(10);
+scene.add(gridHelper);
 // geometric trnsformation
 //animation is a sequence of transfomation
 function animate(time) {
