@@ -45,7 +45,7 @@ scene.add(box);
 
 // add plane elemnt / object in scene
 const planeGeometry = new THREE.PlaneGeometry(30, 30);
-const planeMaterial = new THREE.MeshBasicMaterial({
+const planeMaterial = new THREE.MeshStandardMaterial({
   color: 0xffffff,
   side: THREE.DoubleSide,
 });
@@ -62,7 +62,7 @@ scene.add(gridHelper);
 // add sphere
 
 const sphereGeometry = new THREE.SphereGeometry(4);
-const sphereMaterial = new THREE.MeshBasicMaterial({
+const sphereMaterial = new THREE.MeshStandardMaterial({
   color: 0x0000ff,
   wireframe: true,
 });
@@ -91,6 +91,17 @@ gui.add(options, "speed", 0, 0.1);
 //Ambient Light source
 const ambientLight = new THREE.AmbientLight(0x333333);
 scene.add(ambientLight);
+
+//Add directional light
+
+const directionalLight = new THREE.DirectionalLight(0xffffff, 10);
+scene.add(directionalLight);
+directionalLight.position.set(-30, 50, 0);
+
+//Add directional light helper
+const dLightHelper = new THREE.DirectionalLightHelper(directionalLight, 5);
+scene.add(dLightHelper);
+
 // geometric trnsformation
 //animation is a sequence of transfomation
 // add bounce effect to sphere
